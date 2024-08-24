@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles.scss";
 import navigate from "../../Functions/navigation";
 import { useNavigate } from "react-router-dom";
 
 const Main = () => {
   const navigateFunction = useNavigate();
+
+  // Checks if training has already been made
+  useEffect(() => {
+    const path = navigate("/", "page-load");
+    navigateFunction(path);
+  }, []);
 
   const handleNavigate = () => {
     const path = navigate("/", "next");

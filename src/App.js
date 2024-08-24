@@ -6,11 +6,6 @@ import navigate from "./Functions/navigation";
 import { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
-    // Precisa checar se já existe. Se existe pega o existente, se não transforma em 0
-    // window.location.href = navigate();
-  }, []);
-
   return (
     <div>
       <BrowserRouter>
@@ -34,5 +29,4 @@ p2 - como se proteger (joguinho - quais medidas os gerentes devem adotar?)
 p3 - formas de identificar + o que fazer (joguinho - selecione todas as opções do que fulana deveria fazer) 
 finalização - pontos
 
-coisas pro localstorage: contagem de páginas que já passou
 */
