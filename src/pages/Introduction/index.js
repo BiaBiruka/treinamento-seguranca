@@ -1,6 +1,9 @@
 import React from "react";
 import Banner from "../../assets/banner.png";
+import ImgNormal from "../../assets/image.png";
+import Img2 from "../../assets/imagemComTexto.webp";
 import "./styles.scss";
+import Card from "../../Components/Card";
 
 const Introduction = () => {
   return (
@@ -15,13 +18,25 @@ const Introduction = () => {
       </div>
       <div className="intro-content">
         <h1> Você consegue diferenciar essas duas imagens? </h1>
-        <span> Clique no cartão para ver a resposta.</span>
-        <div className="card-front"></div>
-        <div className="card-back">
-          <b> Não há diferença! </b> <br />
-          Visualmente falando, as duas imagens são idênticas, porém ao analisar
-          seu código-fonte é possível ver um texto oculto.
-        </div>
+        <Card>
+          <div className="images-row">
+            <div className="esteg-img">
+              <img src={ImgNormal} alt="Imagem normal" />
+              Imagem 1
+            </div>
+            <div className="esteg-img">
+              <img src={Img2} alt="Imagem com texto" className="esteg-img" />
+              Imagem 2
+            </div>
+          </div>
+
+          <div>
+            <b> Não há diferença! </b> <br />
+            Visualmente falando as duas imagens são idênticas, porém ao
+            visualizar a segunda imagem como texto existe uma mensagem
+            escondida.
+          </div>
+        </Card>
       </div>
     </>
   );
