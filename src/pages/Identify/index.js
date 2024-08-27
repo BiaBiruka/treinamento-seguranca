@@ -2,6 +2,7 @@ import React from "react";
 import NextPage from "../../Components/NextPage";
 import Folders from "../../assets/folders.jpg";
 import Carlos from "../../assets/carlos.jpg";
+import "./styles.scss";
 
 const Identify = () => {
   return (
@@ -18,15 +19,16 @@ const Identify = () => {
             <li>Se a frequência do áudio possui alterações;</li>
             <li>Se a mídia possui cores estranhas em alguns pontos;</li>
           </ul>
-          Caso possua uma versão original do arquivo que recebeu, tente{" "}
-          <b>comparar</b> ambos para ver se algo parece certo.
+          <span>
+            Caso possua uma versão original do arquivo que recebeu, tente{" "}
+            <b>comparar</b> ambos para ver se algo não parece certo.
+          </span>
         </div>
         <img src={Folders} alt="Fileira de arquivos" />
       </div>
       <div className="identify-second-section">
-        <img src={Carlos} alt="Fileira de arquivos" />
-
         <div className="section-content">
+          <img src={Carlos} alt="Carlos" />
           <h1>O que você faria?</h1>
           <span>
             Carlos trabalha no time de Segurança da Informação, sendo o

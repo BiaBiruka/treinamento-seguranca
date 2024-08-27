@@ -1,7 +1,7 @@
 export default function navigate(currentPage, navType) {
   const pages = ["/", "/introduction", "/identify", "/prevent", "/end"];
   const currentPageIndex = pages.findIndex((el) => el === currentPage);
-
+  window.scrollTo(0, 0);
   // const completedPages = localStorage.getItem("completedPages");
 
   if (navType === "next") {

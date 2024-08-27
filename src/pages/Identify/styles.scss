@@ -1,0 +1,30 @@
+.identify-first-section,
+.identify-second-section {
+  display: flex;
+  flex-direction: row;
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-size: larger;
+    padding: 1.5rem;
+    padding-top: 0;
+    gap: 1.5rem;
+
+    li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin: 0;
+    }
+  }
+}
+
+.identify-first-section {
+}
+
+.identify-second-section {
+  background: white;
+}

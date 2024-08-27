@@ -4,6 +4,7 @@ import Main from "./pages/Main";
 import Introduction from "./pages/Introduction";
 import Identify from "./pages/Identify";
 import Prevent from "./pages/Prevent";
+import End from "./pages/End";
 
 function App() {
   if (window.location.pathname === "/treinamento-seguranca") {
@@ -17,7 +18,7 @@ function App() {
           <Route path={`/introduction`} element={<Introduction />} />
           <Route path={`/identify`} element={<Identify />} />
           <Route path={`/prevent`} element={<Prevent />} />
-          <Route path={`/end`} element={<Main />} />
+          <Route path={`/end`} element={<End />} />
         </Routes>
       </BrowserRouter>
     </div>
@@ -25,11 +26,3 @@ function App() {
 }
 
 export default App;
-
-/* 
-intro - falar o que é e riscos, colocar a imagem de exemplo (vc consegue identificar? - revelar)
-p2 - como se proteger (joguinho - quais medidas os gerentes devem adotar?)
-p3 - formas de identificar + o que fazer (joguinho - selecione todas as opções do que fulana deveria fazer) 
-finalização - pontos
-
-*/
