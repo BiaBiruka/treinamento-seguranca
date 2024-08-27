@@ -1,0 +1,14 @@
+.goButton {
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--dark-blue);
+  color: white;
+  border: none;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.goButton:hover {
+  background: var(--dark-blue-hover);
+}

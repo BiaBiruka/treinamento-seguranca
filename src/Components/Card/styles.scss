@@ -1,17 +1,12 @@
 .card-container {
   perspective: 1000px;
   display: inline-block;
-
-  span {
-    display: flex;
-    justify-content: center;
-    padding-top: 3px;
-  }
+  margin-bottom: 2rem;
 }
 
 .card {
   position: relative;
-  transition: transform 1s;
+  transition: transform 1.75s;
   transform-style: preserve-3d;
   cursor: pointer;
 }
@@ -26,7 +21,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px;
+  padding: 1.75rem;
   backface-visibility: hidden;
   display: flex;
   align-items: center;

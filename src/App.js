@@ -2,17 +2,22 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Main from "./pages/Main";
 import Introduction from "./pages/Introduction";
+import Identify from "./pages/Identify";
+import Prevent from "./pages/Prevent";
 
 function App() {
+  if (window.location.pathname === "/treinamento-seguranca") {
+    window.location.pathname = "/";
+  }
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/introduction" element={<Introduction />} />
-          <Route path="/prevent" element={<Main />} />
-          <Route path="/act" element={<Main />} />
-          <Route path="/end" element={<Main />} />
+          <Route path={`/`} element={<Main />} />
+          <Route path={`/introduction`} element={<Introduction />} />
+          <Route path={`/identify`} element={<Identify />} />
+          <Route path={`/prevent`} element={<Prevent />} />
+          <Route path={`/end`} element={<Main />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -18,7 +18,6 @@ const Card = ({ children }) => {
         <div className="card-front">{frontContent}</div>
         <div className="card-back">{backContent}</div>
       </div>
-      <span> Clique no cartão para virar. </span>
     </div>
   );
 };
