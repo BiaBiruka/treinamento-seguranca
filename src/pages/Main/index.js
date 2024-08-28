@@ -6,14 +6,8 @@ import { useNavigate } from "react-router-dom";
 const Main = () => {
   const navigateFunction = useNavigate();
 
-  // Checks if training has already been made
-  // useEffect(() => {
-  //   const path = navigate("/", "page-load");
-  //   navigateFunction(path);
-  // }, []);
-
   const handleNavigate = () => {
-    const path = navigate("/", "next");
+    const path = navigate("/");
     navigateFunction(path);
   };
 

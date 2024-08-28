@@ -5,9 +5,8 @@ import navigate from "../../Functions/navigation";
 
 const NextPage = () => {
   const navigateTo = useNavigate();
-
   const handleNavigate = () => {
-    navigateTo(navigate(window.location.pathname, "next"));
+    navigateTo(navigate(window.location.hash));
   };
 
   return (
