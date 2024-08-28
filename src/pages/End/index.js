@@ -14,8 +14,7 @@ const End = () => {
       <div className="end-content">
         <h1> Parabéns, voce concluiu o treinamento! </h1>
         <span>
-          Caso queira, você pode recomeçar o treinamento e baixar o documento do
-          conteúdo.
+          Você pode recomeçar o treinamento e baixar o documento do conteúdo.
         </span>
         <span>Você já pode sair desta tela.</span>
         <button onClick={() => handleNavigate()}>Voltar para o início</button>

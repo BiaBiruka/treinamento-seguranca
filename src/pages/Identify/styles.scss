@@ -1,7 +1,6 @@
 .identify-first-section,
 .identify-second-section {
   display: flex;
-  flex-direction: row;
 
   .section-content {
     display: flex;
@@ -10,21 +9,84 @@
     font-size: larger;
     padding: 1.5rem;
     padding-top: 0;
-    gap: 1.5rem;
+    overflow: auto;
 
     li:not(:last-child) {
       margin-bottom: 10px;
     }
 
     ul {
-      margin: 0;
+      margin: 1rem 0rem;
     }
   }
 }
 
 .identify-first-section {
+  max-height: 50vh;
+  overflow: auto;
+  flex-direction: row;
+
+  img {
+    height: 50vh;
+    width: auto;
+    object-fit: cover;
+  }
 }
 
 .identify-second-section {
   background: white;
+  flex-direction: column;
+
+  img {
+    height: 45vh;
+    width: auto;
+    object-fit: cover;
+  }
+
+  .first-line {
+    display: flex;
+    flex-direction: row;
+    height: 45vh;
+    padding-bottom: 1.5rem;
+  }
+
+  .cards-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card-list {
+    width: 24vw;
+    display: flex;
+    text-align: justify;
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.suspicious {
+  b {
+    color: var(--red);
+  }
+}
+
+.not-suspicious {
+  b {
+    color: var(--green);
+  }
+}
+
+@media (max-width: 90rem) {
+  .card-list:nth-child(3) {
+    margin: 0 auto;
+  }
 }

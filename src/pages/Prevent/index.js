@@ -21,7 +21,7 @@ const Prevent = () => {
             <li>
               <b>Análise de arquivos: </b> Utilize ferramentas para analisar os
               arquivos recebidos em busca de possíveis ameaças. Você pode
-              encontrar uma lista de ferramentas fornecidas pelo time se
+              encontrar uma lista de ferramentas aprovadas pelo time se
               segurança{" "}
               <a href="" onClick={(e) => e.preventDefault()}>
                 neste link
@@ -54,20 +54,18 @@ const Prevent = () => {
         <div className="section-content">
           <h1> O que você faria? </h1>
           <span>
-            Joana faz parte do time de vendas, e frequentemente recebe mensagens
+            Joana faz parte do time de vendas e frequentemente recebe mensagens
             de clientes e parceiros de negócios de diversos países. Certo dia,
-            Joana recebeu uma mensagem em nome de uma empresa da qual nunca
-            ouviu falar contendo apenas um arquivo de texto, e pesquisando mais
-            sobre a empresa não encontrou nenhuma informação. O que Joana deve
-            fazer? <i>Clique nos cartões para ver a resposta.</i>
+            Joana recebeu um e-mail em nome de uma empresa da qual nunca ouviu
+            falar contendo apenas um arquivo de texto, e pesquisando mais sobre
+            a empresa não encontrou nenhuma informação. O que Joana deve fazer?{" "}
+            <i>Clique nos cartões para ver a resposta.</i>
           </span>
           <div className="cards-div">
             <div className="row-div">
               <Card>
                 <div className="card-content">
-                  <span>
-                    Abrir o arquivo imediatamente e ver do que se trata.
-                  </span>
+                  <span>Abrir o arquivo e ver do que se trata.</span>
                 </div>
                 <div className="wrong">
                   <b>Errado!</b> Abrir arquivos de fontes desconhecidas pode ser
@@ -84,7 +82,7 @@ const Prevent = () => {
                 </div>
                 <div className="right">
                   <b>Correto!</b> A equipe de Segurança saberá o que fazer nessa
-                  situação e poderá analisar se a mensagem é ou não segura.
+                  situação e poderá analisar se o arquivo é ou não seguro.
                 </div>
               </Card>
             </div>
