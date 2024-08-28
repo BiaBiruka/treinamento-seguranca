@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/treinamento-seguranca/static/css/main.e657c0cc.css",
-    "main.js": "/treinamento-seguranca/static/js/main.7739f86b.js",
+    "main.css": "/treinamento-seguranca/static/css/main.d85e813b.css",
+    "main.js": "/treinamento-seguranca/static/js/main.16dfdc5d.js",
     "static/js/453.6826bd2f.chunk.js": "/treinamento-seguranca/static/js/453.6826bd2f.chunk.js",
     "static/media/personWithPC.png": "/treinamento-seguranca/static/media/personWithPC.76030877ab208b53273b.png",
     "static/media/joana.jpg": "/treinamento-seguranca/static/media/joana.9fbc00463e9be2861fa2.jpg",
@@ -13,12 +13,12 @@
     "static/media/folders.jpg": "/treinamento-seguranca/static/media/folders.4571175b5906b74dda71.jpg",
     "static/media/imagemComTexto.webp": "/treinamento-seguranca/static/media/imagemComTexto.84f5f132371b72bdaedc.webp",
     "index.html": "/treinamento-seguranca/index.html",
-    "main.e657c0cc.css.map": "/treinamento-seguranca/static/css/main.e657c0cc.css.map",
-    "main.7739f86b.js.map": "/treinamento-seguranca/static/js/main.7739f86b.js.map",
+    "main.d85e813b.css.map": "/treinamento-seguranca/static/css/main.d85e813b.css.map",
+    "main.16dfdc5d.js.map": "/treinamento-seguranca/static/js/main.16dfdc5d.js.map",
     "453.6826bd2f.chunk.js.map": "/treinamento-seguranca/static/js/453.6826bd2f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e657c0cc.css",
-    "static/js/main.7739f86b.js"
+    "static/css/main.d85e813b.css",
+    "static/js/main.16dfdc5d.js"
   ]
 }
